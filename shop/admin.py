@@ -19,7 +19,6 @@ class AdminProductModel(admin.ModelAdmin):
         "price",
         "sale_price",
         "sale",
-        "rating",
         "availability",
     ]
     list_editable = ("price", "sale_price", "sale", "availability")

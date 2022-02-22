@@ -48,7 +48,6 @@ class Product(models.Model):
     brand = models.ForeignKey(Brand, blank=True, null=True, on_delete=models.SET_NULL)
     product_type = models.ForeignKey(ProductType, blank=True, null=True, on_delete=models.SET_NULL)
     category = models.ForeignKey(Category, blank=True, null=True, on_delete=models.SET_NULL)
-    rating = models.IntegerField(default=0)
     views = models.ManyToManyField(Ip, related_name='product_views', blank=True)
     availability = models.BooleanField(default=True)
     image = models.ImageField(blank=True, null=True, upload_to='product_images')
