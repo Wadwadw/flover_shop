@@ -19,8 +19,10 @@
     <header class="bg-secondary">
         {% include 'nav_bar.html' %}
     </header>
-    {% block content %}
-    {% endblock content %}
+    <div class="row row-cols-5">
+        {% block content %}
+        {% endblock content %}
+    </div>
 </div>
 </body>
 </html>
